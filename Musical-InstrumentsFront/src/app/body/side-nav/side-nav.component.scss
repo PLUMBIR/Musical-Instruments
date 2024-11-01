@@ -1,0 +1,40 @@
+.navigation_pull {
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.sidebar_title {
+    background-color: #72ac51;
+    padding: 15px 20px;
+    height: auto;
+    position: relative;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.sidebar_menu {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.menu_left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sidebar_item {
+    font-size: 18px;
+    line-height: 1.429em;
+    padding-bottom: 8px;
+}
+
+.sidebar_item_link {
+    color: #000000;
+}
+
+.active {
+    color: #72ac51;
+}

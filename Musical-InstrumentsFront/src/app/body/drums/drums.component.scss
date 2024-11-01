@@ -1,0 +1,108 @@
+.content_right {
+    background-color: #fff;
+    width: 75%;
+    border-radius: 6px;
+}
+
+.default_page_title {
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 0.8em;
+    color: #333333;
+}
+
+.drums {
+    position: relative;
+}
+
+.drums-img {
+    display: block;
+    margin: 0px auto 0px;
+    user-select: none;
+    outline: none;
+}
+
+.drums>div {
+    position: absolute;
+    top: 0;
+}
+
+.kick {
+    width: 21%;
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 50% 40%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hi-hat {
+    width: 19%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 34% 63%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.snare {
+    width: 11%;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 51% 60%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tom1 {
+    width: 11%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 42% 52%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tom2 {
+    width: 11%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 42% 38%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tom3 {
+    width: 12%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50% 28%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.crash {
+    width: 16%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 38% 18%;
+    z-index: 1;
+    cursor: pointer;
+}
