@@ -13,3 +13,34 @@
     letter-spacing: -.01em;
     cursor: pointer;
 }
+
+.contacts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.phone-number {
+    font-size: 18px;
+    padding: 0 7px 0 7px;
+    cursor: pointer;
+}
+
+.copied-message {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b9b9b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}

@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-body">
+        <div class="card-image">
+            <img [src]="card().photo" alt="гитара">
+        </div>
+        <div class="card-content">
+            <div class="card-name">
+                {{card().name}}
+            </div>
+            <div class="card-rating">
+                <div class="rating-review">
+                    <i class="fas fa-star star-styles fa-sm"></i>
+                    <div class="reviews">
+                        {{card().review}}
+                    </div>
+                </div>
+            </div>
+            <div class="card-amount">
+                <div class="card-amount-label">
+                    {{card().amount}}
+                </div> 
+            </div>
+            <div class="card-price-wrap">
+                <div class="mix-price-and-button">
+                    <div class="card-price">
+                        {{card().price}}
+                    </div>
+                    <div class="card-button">
+                        <button class="button">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { SideNavComponent } from '../side-nav/side-nav.component';
 
 @Component({
@@ -11,37 +11,41 @@ import { SideNavComponent } from '../side-nav/side-nav.component';
   styleUrl: './piano.component.scss'
 })
 
-export class PianoComponent implements AfterViewInit {
+export class PianoComponent{
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    const key = event.key.toLowerCase();
+    this.playNote(key);
+  }
+
+  playNote(key: string) {
+    const audio = document.querySelector(`audio[data-key="${key.toUpperCase()}"]`) as HTMLAudioElement;
+    const keyElement = document.querySelector(`.key[data-key="${key.toUpperCase()}"]`);
+
+    if (!keyElement) return;
+
+    const keyNote = keyElement.getAttribute('data-note')!;
+    keyElement.classList.add('playing');
+    const note = document.querySelector('.nowplaying')!;
+    note.innerHTML = keyNote;
+    audio.currentTime = 0;
+    audio.play();
+  }
+
+  removeTransition(e: TransitionEvent) {
+    if (e.propertyName !== 'transform') return;
+    (e.target as HTMLElement).classList.remove('playing');
+  }
+
+  hintsOn(e: HTMLElement, index: number) {
+    e.style.transitionDelay = `${index * 50}ms`;
+  }
+
   ngAfterViewInit() {
     const keys = document.querySelectorAll('.key');
-    const note = document.querySelector('.nowplaying')!;
     const hints = document.querySelectorAll('.hints');
-
-    function playNote(e: KeyboardEvent) {
-      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`) as HTMLAudioElement;
-      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-
-      if (!key) return;
-
-      const keyNote = key.getAttribute('data-note')!;
-
-      key.classList.add('playing');
-      note.innerHTML = keyNote;
-      audio.currentTime = 0;
-      audio.play();
-    }
-
-    function removeTransition(e: TransitionEvent) {
-      if (e.propertyName !== 'transform') return;
-      (e.target as HTMLElement).classList.remove('playing');
-    }
-
-    function hintsOn(e: HTMLElement, index: number) {
-      e.style.transitionDelay = `${index * 50}ms`;
-    }
-
-    hints.forEach((hint, index) => hintsOn(hint as HTMLElement, index));
-    keys.forEach(key => key.addEventListener('transitionend', removeTransition as EventListener));
-    window.addEventListener('keydown', playNote);
+    hints.forEach((hint, index) => this.hintsOn(hint as HTMLElement, index));
+    keys.forEach(key => key.addEventListener('transitionend', this.removeTransition as EventListener));
   }
 }

@@ -17,9 +17,20 @@
                 <a class="nav-link fs-5" routerLink="/piano">Инструменты</a>
             </li>
         </ul>
+        <div class="contacts">
+            <i class="fas fa-phone fa-lg"></i>
+            <div class="phone-number" (click)="copyPhoneNumber()">
+                {{phoneNumber}}
+            </div>
+            @if (showCopiedMessage) {
+                <button class="copied-message">
+                    Скопировано!
+                </button>
+            }
+        </div>
   
         <div class="d-flex align-items-center">
-            <button type="button" class="btn-styles btn-rounded me-3" mdbRipple>
+            <button type="button" class="btn-styles btn-rounded me-3 ms-3" mdbRipple>
                 Войти
             </button>
         </div>

@@ -1,3 +1,9 @@
+.main {
+    background-color: #dddddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .content_right {
     background-color: #fff;
     width: 75%;
@@ -21,6 +27,7 @@
     text-shadow: 0 0 5rem #028ae9;
     transition: all .07s ease;
     min-height: 120px;
+    user-select: none;
 }
 
 .keys {
@@ -30,6 +37,7 @@
     max-width: 880px;
     position: relative;
     margin: 40px auto 0;
+    user-select: none;
 }
 
 .key {
@@ -40,6 +48,7 @@
     display: block;
     box-sizing: border-box;
     z-index: 2;
+    user-select: none;
 }
 
 .key:not(.sharp) {
@@ -59,31 +68,31 @@
     z-index: 3;
 }
 
-.key[data-key="87"] {
+.key[data-key="W"] {
     left: 7%;
 }
 
-.key[data-key="69"] {
+.key[data-key="E"] {
     left: 17%;
 }
 
-.key[data-key="84"]  {
+.key[data-key="T"]  {
     left: 37%;
 }
 
-.key[data-key="89"] {
+.key[data-key="Y"] {
     left: 47%;
 }
 
-.key[data-key="85"] {
+.key[data-key="U"] {
     left: 57%;    
 }
 
-.key[data-key="79"] {
+.key[data-key="O"] {
     left: 77%;    
 }
 
-.key[data-key="80"] {
+.key[data-key="P"] {
     left: 87%;    
 }
 

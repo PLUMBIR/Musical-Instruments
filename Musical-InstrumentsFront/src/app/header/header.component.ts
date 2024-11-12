@@ -14,4 +14,16 @@ import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
 })
 export class HeaderComponent {
   router: Router = inject(Router);
+
+  readonly phoneNumber: string = '+375 (33) 621-10-10';
+  showCopiedMessage: boolean = false;
+
+  copyPhoneNumber() {
+    navigator.clipboard.writeText(this.phoneNumber).then(() => {
+      this.showCopiedMessage = true;
+      setTimeout(() => {
+        this.showCopiedMessage = false;
+      }, 600);
+    });
+  }
 }

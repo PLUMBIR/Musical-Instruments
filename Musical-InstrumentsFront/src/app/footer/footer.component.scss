@@ -1,0 +1,23 @@
+.footer {
+    padding-bottom: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #4d4d4d;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    min-width: 280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    color: #000000;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 20px;
+}

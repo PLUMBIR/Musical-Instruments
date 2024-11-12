@@ -1,3 +1,9 @@
+.main {
+    background-color: #dddddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .content_right {
     background-color: #fff;
     width: 75%;
@@ -21,12 +27,14 @@
     display: block;
     margin: 0px auto 0px;
     user-select: none;
-    outline: none;
 }
 
 .drums>div {
     position: absolute;
     top: 0;
+    font-size: 24px;
+    color: black;
+    user-select: none;
 }
 
 .kick {
