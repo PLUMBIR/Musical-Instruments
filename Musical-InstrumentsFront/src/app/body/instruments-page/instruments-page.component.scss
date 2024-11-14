@@ -1,0 +1,29 @@
+.main {
+    background-color: #dddddd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.page-title {
+    color: black;
+    padding-bottom: 14px;
+    margin-left: 35px;
+}
+
+.instruments-content {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-styles {
+    max-width: 380px;
+    cursor: pointer;
+    margin-left: 35px;
+    margin-bottom: 35px;
+
+    img {
+        max-height: 213px;
+    }
+}

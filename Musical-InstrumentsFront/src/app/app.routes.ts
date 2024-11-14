@@ -1,22 +1,34 @@
+import { InstrumentsPageComponent } from './body/instruments-page/instruments-page.component';
+import { ExercisesPageComponent } from './body/exercises-page/exercises-page.component';
 import { Routes } from '@angular/router';
-import { PianoComponent } from './body/piano/piano.component';
-import { DrumsComponent } from './body/drums/drums.component';
-import { BuypageContentComponent } from './body/buypage-content/buypage-content.component';
+import { MainPageComponent } from './body/main-page/main-page.component';
+import { DrumsPageComponent } from './body/drums-page/drums-page.component';
+import { PianoPageComponent } from './body/piano-page/piano-page.component';
 
 export const routes: Routes = [
     { 
         path: '',
         pathMatch: 'full',
-        component: BuypageContentComponent
+        component: MainPageComponent
+    },
+    { 
+        path: 'exercises',
+        pathMatch: 'full',
+        component: ExercisesPageComponent
+    },
+    { 
+        path: 'instruments',
+        pathMatch: 'full',
+        component: InstrumentsPageComponent
     },
     { 
         path: 'piano',
         pathMatch: 'full',
-        component: PianoComponent
+        component: PianoPageComponent
     },
     { 
         path: 'drums',
         pathMatch: 'full',
-        component: DrumsComponent
+        component: DrumsPageComponent
     },
 ];

@@ -1,163 +1,156 @@
-<div class="main">
-  <div class="container">
-    <div class="d-flex">
-      <app-side-nav class="w-25 pe-4"></app-side-nav>
-      <div class="content_right">
-        <div class="page_header">
-          <h1 class="default_page_title">Виртуальное пианино</h1>
-        </div>
-        <section id="main">
-          <div class="nowplaying">-</div>
-          <div class="keys">
-            <div data-key="A" class="key" data-note="C" (click)="playNote('A')">
-              <span class="hints">C</span>
-            </div>
-            <div data-key="W" class="key sharp" data-note="C#" (click)="playNote('W')">
-              <span class="hints">C#</span>
-            </div>
-            <div data-key="S" class="key" data-note="D" (click)="playNote('S')">
-              <span class="hints">D</span>
-            </div>
-            <div data-key="E" class="key sharp" data-note="D#" (click)="playNote('E')">
-              <span class="hints">D#</span>
-            </div>
-            <div data-key="D" class="key" data-note="E" (click)="playNote('D')">
-              <span class="hints">E</span>
-            </div>
-            <div data-key="F" class="key" data-note="F" (click)="playNote('F')">
-              <span class="hints">F</span>
-            </div>
-            <div data-key="T" class="key sharp" data-note="F#" (click)="playNote('T')">
-              <span class="hints">F#</span>
-            </div>
-            <div data-key="G" class="key" data-note="G" (click)="playNote('G')">
-              <span class="hints">G</span>
-            </div>
-            <div data-key="Y" class="key sharp" data-note="G#" (click)="playNote('Y')">
-              <span class="hints">G#</span>
-            </div>
-            <div data-key="H" class="key" data-note="A" (click)="playNote('H')">
-              <span class="hints">A</span>
-            </div>
-            <div data-key="U" class="key sharp" data-note="A#" (click)="playNote('U')">
-              <span class="hints">A#</span>
-            </div>
-            <div data-key="J" class="key" data-note="B" (click)="playNote('J')">
-              <span class="hints">B</span>
-            </div>
-            <div data-key="K" class="key" data-note="C" (click)="playNote('K')">
-              <span class="hints">C</span>
-            </div>
-            <div data-key="O" class="key sharp" data-note="C#" (click)="playNote('O')">
-              <span class="hints">C#</span>
-            </div>
-            <div data-key="L" class="key" data-note="D" (click)="playNote('L')">
-              <span class="hints">D</span>
-            </div>
-            <div data-key="P" class="key sharp" data-note="D#" (click)="playNote('P')">
-              <span class="hints">D#</span>
-            </div>
-            <div data-key=";" class="key" data-note="E" (click)="playNote(';')">
-              <span class="hints">E</span>
-            </div>
-          </div>
-  
-          <audio
-            data-key="A"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"
-          ></audio>
-          <audio
-            data-key="W"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"
-          ></audio>
-          <audio
-            data-key="S"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"
-          ></audio>
-          <audio
-            data-key="E"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"
-          ></audio>
-          <audio
-            data-key="D"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"
-          ></audio>
-          <audio
-            data-key="F"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"
-          ></audio>
-          <audio
-            data-key="T"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"
-          ></audio>
-          <audio
-            data-key="G"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"
-          ></audio>
-          <audio
-            data-key="Y"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"
-          ></audio>
-          <audio
-            data-key="H"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"
-          ></audio>
-          <audio
-            data-key="U"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"
-          ></audio>
-          <audio
-            data-key="J"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"
-          ></audio>
-          <audio
-            data-key="K"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav"
-          ></audio>
-          <audio
-            data-key="O"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav"
-          ></audio>
-          <audio
-            data-key="L"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"
-          ></audio>
-          <audio
-            data-key="P"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav"
-          ></audio>
-          <audio
-            data-key=";"
-            src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
-          ></audio>
-        </section>
-        <div class="tools_page_content">
-          <h2>Играть на пианино онлайн</h2>
-          <p>
-            Вы можете играть на пианино, используя клавиатуру ПК. Вы можете играть
-            несколько нот одновременно.
-          </p>
-          <h2>Инструкция:</h2>
-          <p>Нота C (до): нажмите клавишу A.</p>
-          <p>Нота C# (до-диез): нажмите клавишу W.</p>
-          <p>Нота D (ре): нажмите клавишу S.</p>
-          <p>Нота D# (ре-диез): нажмите клавишу E.</p>
-          <p>Нота E (ми): нажмите клавишу D.</p>
-          <p>Нота F (фа): нажмите клавишу F.</p>
-          <p>Нота F# (фа-диез): нажмите клавишу T.</p>
-          <p>Нота G (соль): нажмите клавишу G.</p>
-          <p>Нота G# (соль-диез): нажмите клавишу Y.</p>
-          <p>Нота A (ля): нажмите клавишу H.</p>
-          <p>Нота A# (ля-диез): нажмите клавишу U.</p>
-          <p>Нота B (си): нажмите клавишу J.</p>
-          <p>Нота C (до): нажмите клавишу K.</p>
-          <p>Нота C# (до-диез): нажмите клавишу O.</p>
-          <p>Нота D (ре): нажмите клавишу L.</p>
-          <p>Нота D# (ре-диез): нажмите клавишу P.</p>
-          <p>Нота E (ми): нажмите клавишу ;.</p>
-        </div>
+<div class="content_right">
+  <div class="page_header">
+    <h1 class="default_page_title">Виртуальное пианино</h1>
+  </div>
+  <section id="main">
+    <div class="nowplaying">-</div>
+    <div class="keys">
+      <div data-key="A" class="key" data-note="C" (click)="playNote('A')">
+        <span class="hints">C</span>
+      </div>
+      <div data-key="W" class="key sharp" data-note="C#" (click)="playNote('W')">
+        <span class="hints">C#</span>
+      </div>
+      <div data-key="S" class="key" data-note="D" (click)="playNote('S')">
+        <span class="hints">D</span>
+      </div>
+      <div data-key="E" class="key sharp" data-note="D#" (click)="playNote('E')">
+        <span class="hints">D#</span>
+      </div>
+      <div data-key="D" class="key" data-note="E" (click)="playNote('D')">
+        <span class="hints">E</span>
+      </div>
+      <div data-key="F" class="key" data-note="F" (click)="playNote('F')">
+        <span class="hints">F</span>
+      </div>
+      <div data-key="T" class="key sharp" data-note="F#" (click)="playNote('T')">
+        <span class="hints">F#</span>
+      </div>
+      <div data-key="G" class="key" data-note="G" (click)="playNote('G')">
+        <span class="hints">G</span>
+      </div>
+      <div data-key="Y" class="key sharp" data-note="G#" (click)="playNote('Y')">
+        <span class="hints">G#</span>
+      </div>
+      <div data-key="H" class="key" data-note="A" (click)="playNote('H')">
+        <span class="hints">A</span>
+      </div>
+      <div data-key="U" class="key sharp" data-note="A#" (click)="playNote('U')">
+        <span class="hints">A#</span>
+      </div>
+      <div data-key="J" class="key" data-note="B" (click)="playNote('J')">
+        <span class="hints">B</span>
+      </div>
+      <div data-key="K" class="key" data-note="C" (click)="playNote('K')">
+        <span class="hints">C</span>
+      </div>
+      <div data-key="O" class="key sharp" data-note="C#" (click)="playNote('O')">
+        <span class="hints">C#</span>
+      </div>
+      <div data-key="L" class="key" data-note="D" (click)="playNote('L')">
+        <span class="hints">D</span>
+      </div>
+      <div data-key="P" class="key sharp" data-note="D#" (click)="playNote('P')">
+        <span class="hints">D#</span>
+      </div>
+      <div data-key=";" class="key" data-note="E" (click)="playNote(';')">
+        <span class="hints">E</span>
       </div>
     </div>
+
+    <audio
+      data-key="A"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"
+    ></audio>
+    <audio
+      data-key="W"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"
+    ></audio>
+    <audio
+      data-key="S"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/042.wav"
+    ></audio>
+    <audio
+      data-key="E"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/043.wav"
+    ></audio>
+    <audio
+      data-key="D"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/044.wav"
+    ></audio>
+    <audio
+      data-key="F"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/045.wav"
+    ></audio>
+    <audio
+      data-key="T"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/046.wav"
+    ></audio>
+    <audio
+      data-key="G"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/047.wav"
+    ></audio>
+    <audio
+      data-key="Y"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/048.wav"
+    ></audio>
+    <audio
+      data-key="H"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/049.wav"
+    ></audio>
+    <audio
+      data-key="U"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/050.wav"
+    ></audio>
+    <audio
+      data-key="J"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/051.wav"
+    ></audio>
+    <audio
+      data-key="K"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/052.wav"
+    ></audio>
+    <audio
+      data-key="O"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/053.wav"
+    ></audio>
+    <audio
+      data-key="L"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/054.wav"
+    ></audio>
+    <audio
+      data-key="P"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/055.wav"
+    ></audio>
+    <audio
+      data-key=";"
+      src="http://carolinegabriel.com/demo/js-keyboard/sounds/056.wav"
+    ></audio>
+  </section>
+  <div class="tools_page_content">
+    <h2>Играть на пианино онлайн</h2>
+    <p>
+      Вы можете играть на пианино, используя клавиатуру ПК. Вы можете играть
+      несколько нот одновременно.
+    </p>
+    <h2>Инструкция:</h2>
+    <p>Нота C (до): нажмите клавишу A.</p>
+    <p>Нота C# (до-диез): нажмите клавишу W.</p>
+    <p>Нота D (ре): нажмите клавишу S.</p>
+    <p>Нота D# (ре-диез): нажмите клавишу E.</p>
+    <p>Нота E (ми): нажмите клавишу D.</p>
+    <p>Нота F (фа): нажмите клавишу F.</p>
+    <p>Нота F# (фа-диез): нажмите клавишу T.</p>
+    <p>Нота G (соль): нажмите клавишу G.</p>
+    <p>Нота G# (соль-диез): нажмите клавишу Y.</p>
+    <p>Нота A (ля): нажмите клавишу H.</p>
+    <p>Нота A# (ля-диез): нажмите клавишу U.</p>
+    <p>Нота B (си): нажмите клавишу J.</p>
+    <p>Нота C (до): нажмите клавишу K.</p>
+    <p>Нота C# (до-диез): нажмите клавишу O.</p>
+    <p>Нота D (ре): нажмите клавишу L.</p>
+    <p>Нота D# (ре-диез): нажмите клавишу P.</p>
+    <p>Нота E (ми): нажмите клавишу ;.</p>
   </div>
 </div>
 

@@ -1,12 +1,9 @@
-import { AfterViewInit, Component, HostListener } from '@angular/core';
-import { SideNavComponent } from '../side-nav/side-nav.component';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-piano',
   standalone: true,
-  imports: [
-    SideNavComponent,
-  ],
+  imports: [],
   templateUrl: './piano.component.html',
   styleUrl: './piano.component.scss'
 })

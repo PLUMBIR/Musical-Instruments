@@ -1,31 +1,24 @@
-<div class="main">
-  <div class="container">
-    <div class="d-flex">
-      <app-side-nav class="w-25 pe-4"></app-side-nav>
-      <div class="content_right">
-        <div class="page_header">
-          <h1 class="default_page_title">Виртуальные барабаны</h1>
-        </div>
-        <div class="drums">
-          <img class="drums-img" src="drums.jpg" alt="drums" height="700" width="700">
-          <div data-d="k" class="kick" (click)="playSound('k')">K</div>
-          <div data-d="s" class="snare" (click)="playSound('s')">S</div>
-          <div data-d="h" class="hi-hat" (click)="playSound('h')">H</div>
-          <div data-d="v" class="tom1" (click)="playSound('v')">V</div>
-          <div data-d="b" class="tom2" (click)="playSound('b')">B</div>
-          <div data-d="n" class="tom3" (click)="playSound('n')">N</div>
-          <div data-d="c" class="crash" (click)="playSound('c')">C</div>
+<div class="content_right">
+  <div class="page_header">
+    <h1 class="default_page_title">Виртуальные барабаны</h1>
+  </div>
+  <div class="drums">
+    <img class="drums-img" src="drums.jpg" alt="drums" height="700" width="700">
+    <div data-d="k" class="kick" (click)="playSound('k')">K</div>
+    <div data-d="s" class="snare" (click)="playSound('s')">S</div>
+    <div data-d="h" class="hi-hat" (click)="playSound('h')">H</div>
+    <div data-d="v" class="tom1" (click)="playSound('v')">V</div>
+    <div data-d="b" class="tom2" (click)="playSound('b')">B</div>
+    <div data-d="n" class="tom3" (click)="playSound('n')">N</div>
+    <div data-d="c" class="crash" (click)="playSound('c')">C</div>
 
-          <audio data-a="k" src="drums/kick.mp3"></audio>
-          <audio data-a="s" src="drums/snare.mp3"></audio>
-          <audio data-a="h" src="drums/hi-hat.mp3"></audio>
-          <audio data-a="v" src="drums/tom1.mp3"></audio>
-          <audio data-a="b" src="drums/tom2.mp3"></audio>
-          <audio data-a="n" src="drums/tom3.mp3"></audio>
-          <audio data-a="c" src="drums/crash.mp3"></audio>
-        </div>
-      </div>
-    </div>
+    <audio data-a="k" src="drums/kick.mp3"></audio>
+    <audio data-a="s" src="drums/snare.mp3"></audio>
+    <audio data-a="h" src="drums/hi-hat.mp3"></audio>
+    <audio data-a="v" src="drums/tom1.mp3"></audio>
+    <audio data-a="b" src="drums/tom2.mp3"></audio>
+    <audio data-a="n" src="drums/tom3.mp3"></audio>
+    <audio data-a="c" src="drums/crash.mp3"></audio>
   </div>
 </div>
 

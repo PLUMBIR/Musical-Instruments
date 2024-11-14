@@ -1,6 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { PianoComponent } from "./piano/piano.component";
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,7 +6,6 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [
     RouterOutlet,
-    SideNavComponent,
 ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.scss'
